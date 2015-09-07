@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me</title>
+     <!-- anything in the head tag is invisible except title tag, so script and css declarations go here -->
+    <style type="text/css" media="screen"></style>  
+    <link rel="stylesheet" href="resources/layout.css" type="text/css" media="all">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+    <!-- jquery script needs to be below <title> tag -->
+    <script src="resources/javascript.js" type="text/javascript" charset="utf-8">
+      /* this script finds an element with id 'user-name' and replace with user input  */
+      function replaceName() {
+        var myNewName = window.prompt("Pick a new name!");
+        document.getElementById('user-name').innerHTML = myNewName;
+  }
 
+  document.onclick = replaceName; 
+
+    </script>
+    <style type="text/css" media="screen">
+          #header {
+          width: 65%;
+          float: right;  
+          }          
+       </style>
+       
+
+</script>
+
+    </script>
+  </head>
+
+  <body>
+    <div id="header" class="content">
+      <h1>About Me</h1>
+      <p>
+        My name is <span id="user-name">Alva</span> and 
+        I'm a Salesforce.com Consultant.</span>
+      </p>
+    </div>
+    
+    <div class="content clearfix">
+      <!-- Page Navigation -->
+      <div id="nav">
+        <h2>Contents</h2>
+           <div class="img">
+           </div> 
+           <img class="img" src="resources/picture.jpg">
+        <ul class="intro">          
+          <li>Projects</li>
+          <li>Hobbies</li>
+          <li>Fun Facts</li>
+          <li>
+            <a href="https://www.eventbrite.com/myevent?eid=18087208327">Tech Events I Host</a>
+            </li>
+        </ul>
+      </div>
+      
+      <!-- Main content area -->
+      <div id="main">
+        <h2 id="projects">Projects</h2>
+        <p>Describe the kinds of projects you like to work on and give a brief overview of how you accomplished them...</p>
+        
+        <h3>Project #1 Title</h3>
+        <p class="intro">Project #1 Description...</p>
+          
+        <h3>Project #2 Title</h3>
+        <p>Project #2 Description...</p>
+
+        <h2 id="hobbies">Hobbies</h2>
+        
+        <p>What else do you do in your spare time?</p>
+        
+        <h3>Item #1 Title</h3>
+        <p>Use this paragraph to explain Item #1</p>
+        <ul>
+          <li>Cool thing I did</li>
+          <li>Another cool thing I did</li>
+          <li>Final cool thing I did</li>
+        </ul>
+
+        <h3>Item #1 Title</h3>
+        <p>Use this paragraph to explain Item #1</p>
+        <ul>
+          <li>Cool thing I did</li>
+          <li>Another cool thing I did</li>
+          <li>Final cool thing I did</li>
+        </ul>
+        
+        <h2 id="fun-facts">Fun Facts</h2>
+        <h3>Subhead</h3>
+        <p>Use this list to tell us some fun things about yourself.</p>
+        <ul>
+          <li>Cool thing I did</li>
+          <li>Another cool thing I did</li>
+
+        </ul>
+        
+
+      </div>
+    </div>
+    
+    <div id="copyright" class="content">
+      2015 [YOUR NAME HERE], All Rights Reserved.
+    </div>
+  </body>
+</html>

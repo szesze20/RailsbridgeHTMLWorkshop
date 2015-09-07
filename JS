@@ -1,0 +1,29 @@
+// Your Javascript will go here!
+/* this script finds an element with id 'user-name' and replace with user input  */
+
+  /*function replaceRole() {
+    var myNewRole = window.prompt('Pick a new Role!');
+    document.getElementById('user-role').innerHTML = myNewRole; */
+  
+
+  /* document.getElementById('user-name').onClick = replaceName; */
+  /* document.getElementById('user-role').onclick = replaceRole; */
+ 
+
+  $(document).ready(function() {
+  	function replaceName() {
+    var myNewName = window.prompt('Pick a new name!');
+    document.getElementById('user-name').innerHTML = myNewName;
+  }
+  	document.getElementById('user-name').onclick = replaceName;
+  /* Add code from the next steps here */
+  /* Always add this statement to fully load before js executes the jquery */
+
+  $("#copyright").click(function(){ 
+  	$(this).css('color','blue'); 
+  });
+  
+  $("#user-name").click(function(){ 
+    replaceName();
+  });
+});

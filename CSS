@@ -1,1 +1,97 @@
+/*
+ * Add your CSS styles here
+ * 
+ */
 
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background: #f4f4f4;
+}
+
+h1, h3 {
+	color: #222;
+}
+
+h2 {
+	color: #0E32EA;
+	font-size: 20px;
+  	border-bottom: 1px solid #cccccc;
+}
+
+p {
+	line-height: 24px;
+	color: #555;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.content {
+	width: 1000px;
+	margin: 0 auto;
+	margin-left: 10%;  /* use % to account for auto adjust on mobile/desktop*/
+	color:brown;
+}
+
+#header  {
+	border-bottom: 1px solid #999;
+}
+
+#nav {
+	margin: 0 20px 0 0;
+  /* CHALLENGE 3: how could you get this to float to the left side of the screen? */
+}
+
+#main {
+	margin: 0;
+	  float: right;
+  /*  CHALLENrGE 3: how could you get this to float to the left side of the screen? */
+  /* CHALLENGE 2: how could you give this element a one-pixel border down its left side? */
+}
+
+#copyright {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#nav {
+    float: left;
+    border-right: 1px solid #999;
+}
+
+.img {
+	width: 200 !important;
+	height: 340;
+}
+
+
+/*the 3rd set of style:   border-bottom: 30px solid #cccccc; will apply to all elements with .intro (i.e. p.intro, ul.intro)
+If there's conflict between p.intro and .intro, the p.intro styling will take precedence.
+
+another situation:
+if both p.intro and .intro have !important, p.intro takes precedence b/c it's more specific.*/
+
+p.intro {
+          font-size: 30px;
+          background-color: green !important;
+        }
+
+ul.intro {
+          background-color: blue;
+      }   
+
+.intro {
+        border-bottom: 30px solid #cccccc;
+        background-color: yellow !important;
+}
+
+/* Ignore this for now, it is special code needed to fix the layout after using the "float" rules */
+.clearfix:before, .clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+.clearfix { zoom:1; }
